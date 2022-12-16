@@ -1,31 +1,28 @@
 @startuml
-        interface Account [[Account.html]] {
-            {abstract} +withdraw(): void
-            {abstract} +getAccountNumber(): void
-        }
+interface Account [[Account.html]] {
+    {abstract} +withdraw(): void
+    {abstract} +getAccountNumber(): void
+}
 
-        class ATM [[ATM.html]] {
-            +withdraw(): void
-            +getAccountNumber(): void
-        }
+class ATM [[ATM.html]] {
+    +withdraw(): void
+    +getAccountNumber(): void
+}
 
-        class BankAccount [[BankAccount.html]] {
-            +withdraw(): void
-            +getAccountNumber(): void
-        }
+class BankAccount [[BankAccount.html]] {
+    +withdraw(): void
+    +getAccountNumber(): void
+}
 
-        class Main [[Main.html]] {
-            {static} +main(String[]): void
-        }
+class Main [[Main.html]] {
+    {static} +main(String[]): void
+}
 
-        Account <|.. ATM
-        Account <|.. BankAccount
-    }
+Account <|.. ATM
+Account <|.. BankAccount
 
-    namespace unnamed {
-        interface Account [[Account.html]] {
-            {abstract} +withdraw(): void
-            {abstract} +getAccountNumber(): void
-        }
-    }
+interface Account [[Account.html]] {
+    {abstract} +withdraw(): void
+    {abstract} +getAccountNumber(): void
+}
 @enduml
