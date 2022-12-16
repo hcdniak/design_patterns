@@ -1,27 +1,27 @@
 @startuml
-interface Account [[Account.html]] {
+interface Account{
     {abstract} +withdraw(): void
     {abstract} +getAccountNumber(): void
 }
 
-class ATM [[ATM.html]] {
+class ATM  {
     +withdraw(): void
     +getAccountNumber(): void
 }
 
-class BankAccount [[BankAccount.html]] {
+class BankAccount  {
     +withdraw(): void
     +getAccountNumber(): void
 }
 
-class Main [[Main.html]] {
+class Main  {
     {static} +main(String[]): void
 }
 
 Account <|.. ATM
 Account <|.. BankAccount
 
-interface Account [[Account.html]] {
+interface Account  {
     {abstract} +withdraw(): void
     {abstract} +getAccountNumber(): void
 }
