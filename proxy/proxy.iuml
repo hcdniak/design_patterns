@@ -1,6 +1,4 @@
 @startuml
-namespace unnamed {
-
         interface Account [[Account.html]] {
             {abstract} +withdraw(): void
             {abstract} +getAccountNumber(): void
@@ -30,6 +28,4 @@ namespace unnamed {
             {abstract} +getAccountNumber(): void
         }
     }
-
-    center footer UMLDoclet 2.0.20, PlantUML 1.2022.12
 @enduml
